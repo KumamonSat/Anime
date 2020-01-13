@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="../static/fontawesome/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/anime.css">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../static/css/mdb.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/letter-a.png" type="image/png">
+
+    <title>МДМАниме: Жанры</title>
+</head>
+<!-- <body style="background: #2BC0E4; background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4); background: linear-gradient(to top, #4776E6, #8E54E9); height: 100%;"> -->
+<body style="background: #ffffff;">
+
+
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/">
+        <img src="../static/images/image (5).png" height="30" class="d-inline-block align-top"
+             alt="mdb logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li>
+                <form class="form-inline" action="/search" method="POST">
+                    <div class="md-form my-0" style="margin-right: 3em;">
+                        <input name="search" class="form-control mr-sm-2" type="text" placeholder="Поиск" aria-label="Search">
+                    </div>
+                </form>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Войти</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/reg">Регистрация</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--/.Navbar -->
+
+<ul class="nav justify-content-center grey lighten-4 py-4">
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/1">Боевые искусства</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/2">Война</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/3">Детектив</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/4">Драма</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/5">История</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/6">Киберпанк</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/7">Комедии</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/8">Махо-сёдзё</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/9">Меха</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/10">Этти</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/11">Мистика</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/12">Музыкальный</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/13">Пародии</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/14">Повседневность</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/15">Приключения</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/16">Романтика</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/17">Самураи</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/18">Сёдзё</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/19">Сёдзё-ай</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/20">Сёнен</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/21">Сёнен-ай</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/22">Спорт</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/23">Триллер</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/24">Ужасы</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/25">Фантастика</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/26">Фэнтези</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/27">Школа</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/28">Полнометражные</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/29">2019</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/30">2018</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/31">2017</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/32">2016</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/33">2015</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/34">2014</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/genre/39">Дорамы</a>
+    </li>
+</ul>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-0 col-lg-0 col-xl-0">
+        </div>
+        <div class="col-md-12 col-lg-12 col-xl-12">
+            <div class="row">
+                {{range .}}
+                    <div class="col-md-12 col-lg-12 col-xl-6">
+                        <div class="container-fluid my-3 py-3">
+                            <section class="dark-grey-text text-center text-lg-left">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+                                        <img src="{{.Img}}" class="img-fluid" alt="" style="border-radius: 10px; max-width: 316px;">
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 mb-4 mb-lg-0">
+                                        <h3 class="font-weight-bold"><a href="/{{.Id}}" style="color: black;">{{.Title}}</a></h3>
+                                        <p class="text-muted">{{.About}}</p>
+                                        <p style="word-break:break-all;"><span style="font-weight: bold;">Жанры: </span>{{.Genre}}</p>
+                                        <a class="font-weight-bold" href="#" >Подробнее<i class="fas fa-angle-right ml-2"></i></a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                {{end}}
+            </div>
+        </div>
+        <div class="col-md-0 col-lg-0 col-xl-0">
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small" style="background-color: #D648D4; margin-top: 10em;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 py-5">
+                <div class="mb-5 flex-center">
+                    <a class="fb-ic">
+                        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a class="tw-ic">
+                        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a class="gplus-ic">
+                        <i class="fab fa-vk fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a class="ins-ic">
+                        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a class="ins-ic">
+                        <i class="fab fa-telegram fa-lg white-text fa-2x"> </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="/"> МДМАниме</a>
+    </div>
+</footer>
+<!-- Footer -->
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
