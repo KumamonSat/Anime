@@ -1,6 +1,7 @@
 package main
 
 import (
+	"./aniModule"
 	"database/sql"
 	"fmt"
 	"github.com/gorilla/mux"
@@ -68,8 +69,8 @@ func main(){
 	r.HandleFunc("/genre/{id:[0-9]+}", genr)
 	r.HandleFunc("/search", search)
 	r.HandleFunc("/ebalo", ebalo)
-	r.HandleFunc("/reg", reg)
-	r.HandleFunc("/login", login)
+	r.HandleFunc("/reg", aniModule.Reg)
+	r.HandleFunc("/login", aniModule.Login)
 	r.HandleFunc("/admin", admin)
 
 	r.PathPrefix("/static/").Handler(http.FileServer(http.Dir("./")))
@@ -84,14 +85,6 @@ func main(){
 
 func admin(w http.ResponseWriter, r *http.Request){
 	http.ServeFile(w,r, "temp/admin.html")
-}
-
-func reg(w http.ResponseWriter, r *http.Request){
-	http.ServeFile(w,r, "temp/reg.html")
-}
-
-func login(w http.ResponseWriter, r *http.Request){
-	http.ServeFile(w,r, "temp/login.html")
 }
 
 func ebalo(w http.ResponseWriter, r *http.Request){
